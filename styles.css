@@ -1,0 +1,91 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #9dbceb;
+    color: #ae7de6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 1000;
+}
+
+.navbar.scrolled {
+    background-color: #a5a1a1; /* Change background on scroll */
+    color: #a72cee; /* Change font color on scroll */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #802af0; /* Change color on hover */
+}
+
+/* Active Link */
+.navbar a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #873efd;
+}
+
+/* Section Styles */
+section {
+    min-height: 100vh;
+    padding: 2rem;
+    text-align: center;
+}
+
+section:nth-child(odd) {
+    background-color: #c2e5fc;
+}
+
+section:nth-child(even) {
+    background-color: #d5f3fa;
+}
+#home {
+    background-image: url('home.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: rgb(119, 90, 221); 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+#about {
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Ensure the section fills the viewport height */
+    background-color: #add8e6; /* Keep the background color */
+    text-align: center; /* Center align the text */
+}
+#services {
+    padding-top: 100px; /* Adjust this value to move the heading and content down */
+}
+#features h2 {
+    margin-bottom: 80px; /* Adjust this value to lower the heading */
+}
+#contact {
+    padding-top: 190px; /* Adjust this value to move the heading and content down */
+}
